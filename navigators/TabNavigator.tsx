@@ -5,7 +5,7 @@ import { COLORS } from "../theme/theme"
 import Home from "../screens/Home"
 import Cart from "../screens/Cart"
 import Favorite from "../screens/Favorite"
-import History from "../screens/History"
+import Account from "../screens/Account"
 
 const Tab = createBottomTabNavigator()
 
@@ -15,7 +15,7 @@ export default function TabNavigator() {
         <Tab.Screen name="Trang chủ" component={Home}/>
         <Tab.Screen name="Danh mục" component={Cart}/>
         <Tab.Screen name="Thông báo" component={Favorite}/>
-        <Tab.Screen name="Tài khoản" component={History}/>
+        <Tab.Screen name="Tài khoản" component={Account}/>
     </Tab.Navigator>
   )
 }
