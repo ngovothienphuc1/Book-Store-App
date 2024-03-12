@@ -12,10 +12,10 @@ const Tab = createBottomTabNavigator()
 export default function TabNavigator() {
   return (
     <Tab.Navigator screenOptions={{headerShown:false}}>
-        <Tab.Screen name="Home" component={Home}/>
-        <Tab.Screen name="Cart" component={Cart}/>
-        <Tab.Screen name="Favorite" component={Favorite}/>
-        <Tab.Screen name="History" component={History}/>
+        <Tab.Screen name="Trang chủ" component={Home}/>
+        <Tab.Screen name="Danh mục" component={Cart}/>
+        <Tab.Screen name="Thông báo" component={Favorite}/>
+        <Tab.Screen name="Tài khoản" component={History}/>
     </Tab.Navigator>
   )
 }
