@@ -5,7 +5,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 const screenWidth = Dimensions.get('window').width;
 const screenHeight = Dimensions.get('window').height;
 
- function Home() {
+ function Register() {
   const [isSelectedYes, setIsSelectedYes] = useState(false);
   const [isSelectedNo, setIsSelectedNo] = useState(false);
   const [isPasswordHidden, setIsPasswordHidden] = useState(true);
@@ -67,7 +67,7 @@ const screenHeight = Dimensions.get('window').height;
         <Text style={styles.label}>Nhập mật khẩu</Text>
         <View style={styles.inputContainers}>
   <TextInput
-    
+    placeholder="Nhập họ tên"
     secureTextEntry={isPasswordHidden}
   />
   <TouchableOpacity
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
     borderColor: "#000",
-    borderRadius: 10,
+    borderRadius: 5,
     padding: 8,
     margin: 5,
     opacity: 0.5,
@@ -211,5 +211,5 @@ const styles = StyleSheet.create({
   },
  });
  
- export default Home;
+ export default Register;
  
